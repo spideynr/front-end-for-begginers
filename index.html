@@ -24,8 +24,269 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section><h3>Front-End Class 101</h3><small>Web Development</small></section>
+        <section data-background="https://media.giphy.com/media/l0IsIZw8doJm3ysRq/giphy.gif">
+        </section>
+        <section>Why we are here</section>
+        <section>
+          <p>Front-end Web development mainly consists of 3 parts</p>
+          <ul>
+            <li class="fragment">HTML</li>
+            <li class="fragment">CSS</li>
+            <li class="fragment">Javascript</li>
+          </ul>
+        </section>
+        <section>
+          <p>HyperText Markup Language (HTML)</p>
+          <ul>
+            <li class="fragment">Barebones structure of a web page</li>
+            <li class="fragment">Simple language made of elements</li>
+          </ul>
+        </section>
+        <section>
+          <p>Cascading Style Sheets (CSS)</p>
+          <ul>
+            <li class="fragment">Handles the look and feel of html elements</li>
+            <li class="fragment">Helps separate styling logic from html</li>
+          </ul>
+        </section>
+        <section>
+          <p>Javascript</p>
+          <ul>
+            <li class="fragment">Handles the interaction logic between a user and the browser</li>
+            <li class="fragment">Allows for implementation of complex things on web pages ( Dynamically controlling content etc)</li>
+          </ul>
+        </section>
+        <section>
+          <h3>What a simple HTML Page looks like</h3>
+          <pre><code class="hljs html" data-trim contenteditable>
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;title&gt;Example page&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                &lt;header&gt;
+                  &lt;div class=&quot;logo&quot;&gt;
+                    &lt;img src=&quot;./logo.png&quot; alt=&quot;Example Logo&quot;&gt;
+                  &lt;/div&gt;
+                  &lt;nav&gt;
+                    &lt;ul&gt;
+                      &lt;li&gt;&lt;a href=&quot;#/home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href=&quot;#/about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href=&quot;#/contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/nav&gt;
+                &lt;/header&gt;
+                &lt;section&gt;
+                  &lt;h1&gt;Welcome to Front-end 101&lt;/h1&gt;
+                &lt;/section&gt;
+                &lt;h1&gt;This is a simple web page&lt;/h1&gt;
+              &lt;/body&gt;
+            &lt;/html&gt;
+          </code></pre>
+        </section>
+				<section>
+          <h3>This is how it looks</h3>
+          <iframe src="./simple-web-page.html" frameborder="0" width="100%" height="500px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="background-color: white; border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen>
+          </iframe>
+        </section>
+        <section data-background-video="https://media.giphy.com/media/HE193wGJhRXnW/giphy.mp4"></section>
+        <section><h3>Okay don't hate it yet</h3><p class="fragment">There's more</p></section>
+        <section>
+          <h3>Anatomy of an HTLM element</h3>
+          <img src="https://mdn.mozillademos.org/files/9347/grumpy-cat-small.png" alt="">
+        </section>
+        <section>
+          <h3>Nesting HTML Elements</h3>
+          <pre><code class="hljs html" data-trim contenteditable>
+            &lt;p&gt;
+              This is a &lt;b&gt; bold &lt;/b&gt; statement
+            &lt;/p&gt;
+          </code></pre>
+        </section>
+        <section>
+          <h3>Block Vs Inline elements</h3>
+          <pre><code class="hljs html" data-trim contenteditable>
+            &lt;span&gt;this&lt;/span&gt;
+            &lt;span&gt;is&lt;/span&gt;
+            &lt;span&gt;on the same&lt;/span&gt;
+            &lt;span&gt;line&lt;/span&gt;
+            &lt;p&gt;these &lt;/p&gt;
+            &lt;p&gt;are not &lt;/p&gt;
+          </code></pre>
+          <iframe src="./block-vs-inline.html" frameborder="0" width="100%" height="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="zoom: 2;background-color: white; border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen>
+          </iframe>
+        </section>
+        <section>
+          <h3>HTML Attributes</h3>
+          <img src="https://mdn.mozillademos.org/files/9345/grumpy-cat-attribute-small.png" alt="">
+        </section>
+        <section>
+          <h3>Whitespace in html</h3>
+          <pre><code class="hljs html" data-trim contenteditable>
+            <p>I have too much white space</p>
+            <p>I have    too much     white 
+
+            space</p>
+          </code></pre>
+          
+          <h3>Output</h3>
+          <p>I have too much white space</p>
+          <p>I have    too much     white 
+
+          space</p>
+        </section>
+        <section>
+          <h3>Comments in HTML</h3>
+          <pre><code class="hljs html" data-trim contenteditable>
+            &lt;!-- &lt;p&gt;This wont show anywhere!&lt;/p&gt; --&gt;
+          </code></pre>
+        </section>
+        <section>
+          <h3>Some of the available HTML Elements</h3>
+          <pre><code class="hljs html" data-trim contenteditable>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <p>Paragraph</p>
+          <span>Span</span>
+          <a href="#">Anchor Links</a>
+          <ul>Unsorted lists</ul>
+          <ol>Orderer lists</ol>
+          <li>List items</li>
+          <div>Divider element</div>
+          <b>bolds</b>
+          <i>Italics</i>
+          <img src="#" alt="image tag">
+          <button>Buttons</button>
+          <input type="" value="Input elements" disabled>
+          <form action="#">Form</form>
+        </code></pre>
+        </section>
+        <section>
+          <h3>Best resource by far for reading</h3>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">MDN Web docs</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Available HTML elements</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>The &lt;head/&gt; element</h3>
+          <pre><code class="hljs html" data-trim contenteditable>
+            &lt;head&gt;
+              &lt;meta charset=&quot;utf-8&quot;&gt;
+              &lt;title&gt;The title of the page&lt;/title&gt;
+              &lt;link rel=&quot;stylesheet&quot; href=&quot;my-css-file.css&quot;&gt;
+              &lt;script src=&quot;my-js-file.js&quot;&gt;&lt;/script&gt;
+            &lt;/head&gt;
+          </code></pre>
+        </section>
+        <section>
+          <h3>The <font style="color:#f9266e;">style</font> element</h3>
+        </section>
+        <section>
+          <h3>Styling html elements</h3>
+          <p>There is also an attribute and an element called <font style="color:#f9266e;">style</font> in HTML markup</p>
+          <p>You can either style an element explicitly or use the <style></style> block to add multiple styles for your elements</p>
+        </section>
+        <section>
+          <pre><code class="hljs html" data-trim contenteditable>
+            <button style="color: red;">this is a red button</button>
+            <button>this is not red</button>
+          </code></pre>
+          <button style="color: red;">This is a red button</button>
+          <button>This is not</button>
+        </section>
+        <section>
+          <pre><code class="hljs html" data-trim contenteditable>
+            <style>
+              button {
+                color: red;
+              }
+            </style>
+            <button>this is a red button</button>
+            <button>this is also red</button>
+          </code></pre>
+          <button style="color: red;">This is a red button</button>
+          <button style="color: red;">This is also red</button>
+        </section>
+        <section>
+          <h3>Wait wait, lets go back a little</h3>
+        </section>
+        <section>
+          <h3>Color in HTML</h3>
+          <p>Color is represented in multitude of ways in HTML. RGB, RGBA, HSL, HSLA, HEX and some default colors already specified in each browser</p>
+        </section>
+        <section>
+          <h3>Named colors</h3>
+          <pre><code class="hljs">
+            color: red;
+            color: orange;
+            color: tan;
+            color: rebeccapurple;
+            ...
+            etc
+          </code></pre>
+        </section>
+        <section>
+          <h3>Hex colors</h3>
+          <pre><code class="hljs">
+            color: #090;
+            color: #009900;
+            color: #090a;
+            color: #009900aa;
+          </code></pre>
+        </section>
+        <section>
+          <h3>RGB colors</h3>
+          <pre><code class="hljs">
+            color: rgb(34, 12, 64, 0.6);
+            color: rgba(34, 12, 64, 0.6);
+            color: rgb(34 12 64 / 0.6);
+            color: rgba(34 12 64 / 0.3);
+            color: rgb(34.0 12 64 / 60%);
+            color: rgba(34.6 12 64 / 30%);
+          </code></pre>
+        </section>
+        <section>
+          <h3>HSL colors</h3>
+          <pre><code class="hljs">
+            color: hsl(30, 100%, 50%, 0.6);
+            color: hsla(30, 100%, 50%, 0.6);
+            color: hsl(30 100% 50% / 0.6);
+            color: hsla(30 100% 50% / 0.6);
+            color: hsl(30.0 100% 50% / 60%);
+            color: hsla(30.2 100% 50% / 60%);
+          </code></pre>
+        </section>
+        <section>
+          <h3>Yeah but what was that thing you added in the style block?</h3>
+        </section>
+        <section>
+          <h3>Element Selectors</h3>
+          <p>When you need to style an element you need to be able to select it first, and then instruct the browser to apply a given styling property</p>
+          <p>We will be discussing this more in depth</p>
+        </section>
+        <section>
+          <h3>Selecting the button</h3>
+          <p>You can select any of the html elements and style them using their names</p>
+          <pre><code class="hljs css" data-trim contenteditable>
+              button {
+                color: red;
+              }
+              h1 {
+                color: black;
+              }
+              p {
+                color: blue;
+              }
+          </code></pre>
+        </section>
+        <section data-background="https://media.giphy.com/media/l3q2zbskZp2j8wniE/giphy.gif">
+          <h3>Live coding time!</h3>
+        </section>
 			</div>
 		</div>
 
